@@ -28,7 +28,7 @@ int main()
     */
    if (gpioInitialise() < 0) return -1;
    gpioSetSignalFunc(SIGINT, stop);
-   gpioSetMode(GPIO_LED, PI_OUTPUT); // Set GPIO18 as output.
+   gpioSetMode(GPIO_LED, PI_OUTPUT); // Set GPIO as output.
 
    /*
     * Blinking forever until interrupt from SIGINT
